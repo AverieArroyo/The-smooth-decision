@@ -1,0 +1,14 @@
+{
+  "name": "the-smooth-decision",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "vite": "^7.1.7"
+  }
+}
