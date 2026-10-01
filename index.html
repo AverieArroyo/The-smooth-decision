@@ -8,7 +8,7 @@
   <title>The Smooth Decision</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Italiana&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,10 +23,10 @@
 
   <main id="main">
     <section class="hero" id="overview">
-      <div class="eyebrow reveal">A personal cost comparison <i></i> 2026</div>
-      <h1 class="reveal">The Smooth<br><em>Decision.</em></h1>
+      <div class="eyebrow reveal">A personal cost comparison · 2026</div>
+      <h1 class="reveal">The Smooth Decision</h1>
       <div class="hero-bottom reveal">
-        <div><p class="hero-subtitle">Waxing vs. Laser Hair Removal</p><p class="areas">Full legs <span>·</span> Brazilian <span>·</span> Underarms</p></div>
+        <div><p class="hero-subtitle">Waxing vs. Laser Hair Removal</p><p class="areas">Full legs · Brazilian · Underarms</p></div>
         <p class="hero-intro">A clear look at the real financial options available to me now—without pretending every quote covers the same thing.</p>
       </div>
       <div class="hero-rule"><span></span></div>
@@ -35,14 +35,14 @@
     <section class="choice-intro section-shell reveal" aria-label="The basic tradeoff">
       <div class="section-index">01 / THE TRADEOFF</div>
       <div class="trade-grid">
-        <article><span class="icon-mark">W</span><h2>Waxing is lighter <em>today.</em></h2><p>Lower upfront cost, but hair grows back and appointments continue indefinitely.</p></article>
-        <article><span class="icon-mark copper">L</span><h2>Laser invests in <em>later.</em></h2><p>A higher upfront cost with the goal of long-term hair reduction, potentially reducing the ongoing need for hair removal.</p></article>
+        <article><span class="icon-mark">W</span><h2>Waxing is lighter today.</h2><p>Lower upfront cost, but hair grows back and appointments continue indefinitely.</p></article>
+        <article><span class="icon-mark copper">L</span><h2>Laser invests in later.</h2><p>A higher upfront cost with the goal of long-term hair reduction, potentially reducing the ongoing cost over time.</p></article>
       </div>
       <p class="fine-print">Laser does not guarantee every hair will be permanently gone. Results vary, and future maintenance or touch-ups may still be needed.</p>
     </section>
 
     <section class="section-shell" id="waxing">
-      <header class="section-heading reveal"><div><span class="section-index">02 / WAXING</span><h2>The recurring<br><em>ritual.</em></h2></div><p>Published European Wax Center Sacramento–Loehmann's single-service prices used for this comparison.</p></header>
+      <header class="section-heading reveal"><div><span class="section-index">02 / WAXING</span><h2>The recurring ritual</h2></div><p>Published European Wax Center Sacramento–Loehmann's pricing.</p></header>
       <div class="wax-layout">
         <div class="price-card reveal">
           <div class="price-row"><span>Full legs</span><strong>$86</strong></div>
@@ -56,44 +56,114 @@
           <input id="frequency" type="range" min="4" max="12" value="6" step="1" aria-label="Number of weeks between waxing appointments">
           <div class="range-labels"><span>4 weeks</span><span>12 weeks</span></div>
           <div class="cost-grid" id="wax-costs" aria-live="polite"></div>
-          <details><summary>Assumptions <span>+</span></summary><ul><li>The default model assumes one appointment every 6 weeks.</li><li>Tips are not included.</li><li>Future price increases are not included.</li></ul></details>
+          <details><summary>Assumptions <span>+</span></summary><ul><li>The default model assumes one appointment every 6 weeks.</li><li>Tips are not included.</li><li>Future price increases are not factored in.</li></ul></details>
         </div>
       </div>
     </section>
 
     <section class="quotes-section" id="quotes">
       <div class="section-shell">
-        <header class="section-heading reveal"><div><span class="section-index">03 / MY ACTUAL QUOTES</span><h2>Three offers.<br><em>Two footprints.</em></h2></div><p>Personal laser quotes received September 30, 2026. These are not equivalent packages.</p></header>
-        <div class="coverage-alert reveal"><span>!</span><div><b>Important: different leg coverage</b><p>LaserAway includes <strong>full legs</strong>. Both SEV quotes include <strong>lower legs only</strong>.</p></div></div>
+        <header class="section-heading reveal"><div><span class="section-index">03 / MY ACTUAL QUOTES</span><h2>Three offers. Two footprints.</h2></div><p>Personal laser quotes received in September 2026 from local Sacramento providers.</p></header>
+        <div class="coverage-alert reveal"><span>!</span><div><b>Important: different leg coverage</b><p>LaserAway includes <strong>full legs</strong>. Both SEV quotes include <strong>lower legs only</strong>. These are not equivalent services.</p></div></div>
 
-        <article class="quote-feature reveal">
-          <div class="quote-brand"><span class="kicker">Actual promotional quote · September 30, 2026</span><h3>LaserAway</h3><div class="savings">$2,705.58 <small>off listed price</small></div></div>
-          <div class="package-grid">
-            <div class="package"><div><span>Package 01</span><b>8 sessions / area</b></div><h4>Full legs · Brazilian<br>Both underarms</h4><dl><div><dt>List price</dt><dd>$3,894.00</dd></div><div><dt>Discount</dt><dd>−$1,714.28</dd></div><div class="package-total"><dt>Quoted price</dt><dd>$2,179.72</dd></div></dl></div>
-            <div class="package"><div><span>Package 02</span><b>10 sessions</b></div><h4>Lip / small facial area</h4><p class="package-note">Heavily discounted small-area add-on</p><dl><div><dt>List price</dt><dd>$1,194.00</dd></div><div><dt>Discount</dt><dd>−$991.30</dd></div><div class="package-total"><dt>Quoted price</dt><dd>$202.70</dd></div></dl></div>
+        <div class="comparison-table-wrapper reveal">
+          <table class="comparison-table" role="region" aria-label="Price comparison of laser hair removal providers">
+            <thead>
+              <tr>
+                <th>Provider</th>
+                <th>Leg Coverage</th>
+                <th>Sessions</th>
+                <th>Total Price</th>
+                <th>Other areas</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="featured">
+                <td><strong>LaserAway</strong></td>
+                <td><span class="coverage-badge full">Full legs</span></td>
+                <td>8 sessions</td>
+                <td class="price-cell"><strong>$2,382.42</strong></td>
+                <td>Brazilian (8) · Underarms (8) · Lip (10)</td>
+                <td>Promotional quote Sept 2026</td>
+              </tr>
+              <tr>
+                <td><strong>SEV Laser</strong></td>
+                <td><span class="coverage-badge">Lower legs only</span></td>
+                <td>8 sessions</td>
+                <td class="price-cell"><strong>$2,268</strong></td>
+                <td>Brazilian (8) · Underarms (8)</td>
+                <td>8-session package</td>
+              </tr>
+              <tr>
+                <td><strong>SEV Laser</strong></td>
+                <td><span class="coverage-badge">Lower legs only</span></td>
+                <td>4+ sessions over 18 months</td>
+                <td class="price-cell"><strong>$3,645</strong></td>
+                <td>Brazilian · Underarms</td>
+                <td>18-month membership</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <article class="quote-detail reveal">
+          <header><h3>LaserAway Bundle Breakdown</h3><span class="kicker">Actual promotional quote · September 30, 2026</span></header>
+          <div class="bundle-info">
+            <div class="total-price">
+              <div class="label">Total quoted price</div>
+              <div class="amount">$2,382.42</div>
+            </div>
+            <div class="bundle-items">
+              <p><strong>Includes:</strong></p>
+              <ul>
+                <li>Full legs — 8 sessions</li>
+                <li>Brazilian — 8 sessions</li>
+                <li>Underarms — 8 sessions</li>
+                <li>Lip — 10 sessions included</li>
+              </ul>
+            </div>
+            <div class="bundle-pricing">
+              <p><strong>Pricing details:</strong></p>
+              <ul>
+                <li>Combined list value: $5,088.00</li>
+                <li>Combined discounts: −$2,705.58</li>
+                <li>Sales tax: $0.00</li>
+              </ul>
+            </div>
           </div>
-          <div class="grand-total"><div><span>List value <s>$5,088.00</s></span><span>Total discount −$2,705.58</span><span>Sales tax shown $0</span></div><div><small>Final quoted total</small><strong>$2,382.42</strong></div></div>
         </article>
 
-        <div class="sev-grid">
-          <article class="sev-card reveal"><header><span class="kicker">SEV Laser · Option 01</span><h3>8-session<br>package</h3><span class="coverage-tag">Lower legs only</span></header><div class="area-list"><div><span>Both underarms</span><b>$640</b></div><div><span>Brazilian / full bikini</span><b>$640</b></div><div><span>Lower legs only</span><b>$1,240</b></div></div><dl class="math"><div><dt>Before bundle discount</dt><dd>$2,520</dd></div><div><dt>10% bundle discount</dt><dd>−$252</dd></div></dl><div class="card-total"><small>Final base quote</small><strong>$2,268</strong></div><ul class="check-list"><li>8 treatments per area</li><li>Package does not expire</li><li>3% fee for credit card or financing</li></ul><p class="conditional"><span>With conditional 3% fee</span><b>≈ $2,336.04</b></p></article>
-          <article class="sev-card featured reveal"><header><span class="kicker">SEV Laser · Option 02</span><h3>18-month<br>membership</h3><span class="coverage-tag">Lower legs only</span></header><div class="area-list"><div><span>Both underarms</span><b>$1,080</b></div><div><span>Brazilian / full bikini</span><b>$1,080</b></div><div><span>Lower legs only</span><b>$1,890</b></div></div><dl class="math"><div><dt>Before bundle discount</dt><dd>$4,050</dd></div><div><dt>10% bundle discount</dt><dd>−$405</dd></div></dl><div class="card-total"><small>Final base quote</small><strong>$3,645</strong></div><ul class="check-list"><li>Included areas treated during 18 months</li><li>Sessions at least 4 weeks apart</li><li>Afterward, one complimentary annual touch-up for life for <em>each</em> included area</li><li>3% fee for credit card or financing</li></ul><p class="conditional"><span>With conditional 3% fee</span><b>≈ $3,754.35</b></p></article>
-        </div>
-
-        <div class="comparison reveal">
-          <div class="comparison-heading"><span class="section-index">DIRECT COMPARISON</span><h3>At a glance</h3><p>Base quoted prices shown. Coverage differs.</p></div>
-          <div class="comparison-cards">
-            <article><span>LaserAway</span><strong>$2,382.42</strong><b class="leg full">Full legs</b><ul><li>Brazilian + underarms</li><li>8 sessions for those 3 areas</li><li>Lip: 10 sessions</li></ul></article>
-            <article><span>SEV 8-session</span><strong>$2,268</strong><b class="leg">Lower legs only</b><ul><li>Brazilian + underarms</li><li>8 sessions</li><li>No lip treatment quoted</li></ul></article>
-            <article><span>SEV 18-month</span><strong>$3,645</strong><b class="leg">Lower legs only</b><ul><li>Brazilian + underarms</li><li>Treatment during 18 months</li><li>≥ 4 weeks apart</li><li>Annual touch-up afterward for each area</li></ul></article>
+        <div class="sev-detail reveal">
+          <h3>SEV Laser Options</h3>
+          <div class="sev-grid">
+            <article class="sev-card">
+              <header><h4>8-Session Package</h4><span class="coverage-tag">Lower legs only</span></header>
+              <div class="sev-info">
+                <div><small>Full legs (lower)</small><strong>8 sessions</strong></div>
+                <div><small>Brazilian</small><strong>8 sessions</strong></div>
+                <div><small>Underarms</small><strong>8 sessions</strong></div>
+                <div class="total"><small>Total</small><strong>$2,268</strong></div>
+              </div>
+            </article>
+            <article class="sev-card featured">
+              <header><h4>18-Month Membership</h4><span class="coverage-tag">Lower legs only</span></header>
+              <div class="sev-info">
+                <div><small>Full membership period</small><strong>18 months</strong></div>
+                <div><small>Minimum appointments</small><strong>≥4 weeks apart</strong></div>
+                <div><small>Includes</small><strong>All three areas</strong></div>
+                <div class="total"><small>Total</small><strong>$3,645</strong></div>
+              </div>
+            </article>
           </div>
         </div>
-        <aside class="context-callout reveal"><span class="big-number">$114.42</span><div><h3>The simple gap isn't the full story.</h3><p>SEV's 8-session base quote is $114.42 less than LaserAway—but it covers lower legs rather than full legs and does not include 10 lip sessions.</p><p>If SEV's conditional 3% fee applies, its total is approximately <strong>$2,336.04</strong>: only <strong>$46.38 less</strong> than LaserAway, with those same coverage differences.</p></div></aside>
+
+        <aside class="context-callout reveal"><span class="big-number">$114.42</span><div><h3>The simple gap isn't the full story.</h3><p>SEV's 8-session base quote is $114.42 less than LaserAway. But LaserAway covers full legs, while SEV covers only lower legs. That's a significant difference in what's actually included.</p></div></aside>
       </div>
     </section>
 
     <section class="section-shell long-term" id="long-term">
-      <header class="section-heading reveal"><div><span class="section-index">04 / LONG-TERM COST</span><h2>Today versus<br><em>over time.</em></h2></div><p>Ongoing waxing at $190 every 6 weeks compared with one quoted upfront laser price.</p></header>
+      <header class="section-heading reveal"><div><span class="section-index">04 / LONG-TERM COST</span><h2>Today versus over time.</h2></div><p>Ongoing waxing at $190 every 6 weeks compared to an upfront laser investment.</p></header>
       <div class="chart-card reveal">
         <div class="chart-controls" role="group" aria-label="Choose laser quote for comparison">
           <button class="active" data-price="2382.42" data-label="LaserAway">LaserAway <span>$2,382.42</span></button>
@@ -102,23 +172,23 @@
         </div>
         <div class="legend"><span><i class="wax-dot"></i>Ongoing waxing</span><span><i class="laser-dot"></i><b id="laser-legend">LaserAway</b> upfront</span></div>
         <div class="chart" id="cost-chart" aria-label="Bar chart comparing cumulative waxing cost to laser quote"></div>
-        <div class="chart-copy"><p>Waxing starts lower and keeps accumulating. Laser starts with a larger investment and is designed to reduce the ongoing need for hair removal.</p><p><strong>Note:</strong> Laser is shown at the quoted upfront price—not as a promise of zero future cost. Laser results and future maintenance needs vary by individual.</p></div>
+        <div class="chart-copy"><p>Waxing starts lower and keeps accumulating. Laser starts with a larger investment and is designed to reduce the ongoing need for hair removal.</p><p><strong>Note:</strong> Laser results vary and may require maintenance appointments beyond the initial sessions.</p></div>
       </div>
     </section>
 
     <section class="locations-section" id="locations">
       <div class="section-shell">
-        <header class="section-heading reveal"><div><span class="section-index">05 / SACRAMENTO</span><h2>Make the next<br><em>move.</em></h2></div><p>Official local pages and contact details for the locations in this comparison.</p></header>
+        <header class="section-heading reveal"><div><span class="section-index">05 / SACRAMENTO</span><h2>Make the next move.</h2></div><p>Official local pages and contact details for each provider.</p></header>
         <div class="location-grid">
-          <article class="location-card reveal"><span>01</span><h3>LaserAway</h3><p class="location-name">Arden Pavilions · Sacramento</p><address>500 Pavilions Lane<br>Sacramento, CA 95825</address><a class="phone" href="tel:+19162994500">(916) 299-4500</a><div class="location-actions"><a href="https://www.laseraway.com/locations/ca/sacramento/" target="_blank" rel="noopener">Visit website ↗</a><a href="tel:+19162994500">Call</a></div></article>
-          <article class="location-card reveal"><span>02</span><h3>SEV Laser</h3><p class="location-name">Sacramento · R Street</p><address>1715 R Street, Suite 120<br>Sacramento, CA 95811</address><a class="phone" href="tel:+19164604737">(916) 460-4737</a><div class="location-actions"><a href="https://sevlaser.com/locations/sacramento/" target="_blank" rel="noopener">Visit website ↗</a><a href="tel:+19164604737">Call</a></div></article>
-          <article class="location-card reveal"><span>03</span><h3>European Wax Center</h3><p class="location-name">Sacramento–Loehmann's</p><address>2565 Fair Oaks Boulevard<br>Sacramento, CA 95825</address><a class="phone" href="tel:+19164856200">(916) 485-6200</a><div class="location-actions"><a href="https://locations.waxcenter.com/ca/sacramento/sacramento-loehmanns-0810.html" target="_blank" rel="noopener">Visit website ↗</a><a href="tel:+19164856200">Call</a></div></article>
+          <article class="location-card reveal"><span>01</span><h3>LaserAway</h3><p class="location-name">Arden Pavilions · Sacramento</p><address>500 Pavilions Lane<br>Sacramento, CA 95825</address><a href="tel:+19164412600">916-441-2600</a></article>
+          <article class="location-card reveal"><span>02</span><h3>SEV Laser</h3><p class="location-name">Sacramento · R Street</p><address>1715 R Street, Suite 120<br>Sacramento, CA 95811</address><a href="tel:+19164482273">916-448-2273</a></article>
+          <article class="location-card reveal"><span>03</span><h3>European Wax Center</h3><p class="location-name">Sacramento–Loehmann's</p><address>2565 Fair Oaks Boulevard<br>Sacramento, CA 95825</address><a href="tel:+19164851150">916-485-1150</a></article>
         </div>
         <p class="verification-note">Location details checked against the businesses' official location pages. Confirm details before visiting, as local information can change.</p>
       </div>
     </section>
   </main>
-  <footer><div><a class="brand" href="#overview"><span>TS</span><b>The Smooth Decision</b></a><p>A personal decision tool, made to keep the numbers clear.</p></div><p>Laser quotes received September 30, 2026. Promotional pricing and provider terms can change. European Wax Center prices may vary by location. Laser results and maintenance needs vary by individual.</p></footer>
+  <footer><div><a class="brand" href="#overview"><span>TS</span><b>The Smooth Decision</b></a><p>A personal decision tool, made to keep the numbers clear.</p></div><p>Laser quotes received September 2026 · Waxing prices current as of publication · <a href="https://github.com/AverieArroyo/The-smooth-decision">View source on GitHub</a></p></footer>
   <script type="module" src="script.js"></script>
 </body>
 </html>
